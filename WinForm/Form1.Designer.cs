@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             gb_connection = new GroupBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
             textBox5 = new TextBox();
+            textBox4 = new TextBox();
+            textBox3 = new TextBox();
+            textBox2 = new TextBox();
+            textBox1 = new TextBox();
             button1 = new Button();
             textBox6 = new TextBox();
             button2 = new Button();
@@ -59,38 +59,6 @@
             gb_connection.TabStop = false;
             gb_connection.Text = "Connections";
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(6, 22);
-            textBox1.Name = "textBox1";
-            textBox1.PlaceholderText = "IP";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(6, 51);
-            textBox2.Name = "textBox2";
-            textBox2.PlaceholderText = "PORT";
-            textBox2.Size = new Size(100, 23);
-            textBox2.TabIndex = 1;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(6, 80);
-            textBox3.Name = "textBox3";
-            textBox3.PlaceholderText = "Database Title";
-            textBox3.Size = new Size(100, 23);
-            textBox3.TabIndex = 2;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(6, 109);
-            textBox4.Name = "textBox4";
-            textBox4.PlaceholderText = "User";
-            textBox4.Size = new Size(100, 23);
-            textBox4.TabIndex = 3;
-            // 
             // textBox5
             // 
             textBox5.Location = new Point(6, 138);
@@ -100,6 +68,38 @@
             textBox5.Size = new Size(100, 23);
             textBox5.TabIndex = 4;
             // 
+            // textBox4
+            // 
+            textBox4.Location = new Point(6, 109);
+            textBox4.Name = "textBox4";
+            textBox4.PlaceholderText = "User";
+            textBox4.Size = new Size(100, 23);
+            textBox4.TabIndex = 3;
+            // 
+            // textBox3
+            // 
+            textBox3.Location = new Point(6, 80);
+            textBox3.Name = "textBox3";
+            textBox3.PlaceholderText = "Database Title";
+            textBox3.Size = new Size(100, 23);
+            textBox3.TabIndex = 2;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(6, 51);
+            textBox2.Name = "textBox2";
+            textBox2.PlaceholderText = "PORT";
+            textBox2.Size = new Size(100, 23);
+            textBox2.TabIndex = 1;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(6, 22);
+            textBox1.Name = "textBox1";
+            textBox1.PlaceholderText = "IP";
+            textBox1.Size = new Size(100, 23);
+            textBox1.TabIndex = 0;
+            // 
             // button1
             // 
             button1.Location = new Point(12, 415);
@@ -108,6 +108,7 @@
             button1.TabIndex = 1;
             button1.Text = "Загрузить";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // textBox6
             // 
@@ -141,6 +142,7 @@
             button3.TabIndex = 5;
             button3.Text = "TXT";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -150,6 +152,7 @@
             button4.TabIndex = 6;
             button4.Text = "EXCEL";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -159,6 +162,7 @@
             button5.TabIndex = 7;
             button5.Text = "Очистить";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // Form1
             // 
